@@ -60,13 +60,13 @@ end:
 	return res;
 }
 
-int silent_arg_func(UNUSED(const char *arg)) {
+int silent_arg_func(BCTBX_UNUSED(const char *arg)) {
 	bctbx_set_log_level(log_domain, BCTBX_LOG_FATAL);
 	bctbx_set_log_level(BCTBX_LOG_DOMAIN, BCTBX_LOG_FATAL);
 	return 0;
 }
 
-int verbose_arg_func(UNUSED(const char *arg)) {
+int verbose_arg_func(BCTBX_UNUSED(const char *arg)) {
 	bctbx_set_log_level(log_domain, BCTBX_LOG_DEBUG);
 	bctbx_set_log_level(BCTBX_LOG_DOMAIN,BCTBX_LOG_DEBUG);
 	return 0;
